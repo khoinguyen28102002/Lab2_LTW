@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Phần 1 Bài 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type ="text/css" rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function changeImage(image) {
+        document.getElementById("img-topic").src = "images/image0" + image + ".jpg";
+    }
+  </script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Book World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catogries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Follow us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class = "row">
+            <aside class="col-sm-12 col-md-2">
+                <h2>Catogries</h2>
+                <ul>
+                    <li><a href="#">Comics</a></li>
+                    <li><a href="#">Novels</a></li>
+                    <li><a href="#">Sciences</a></li>
+                    <li><a href="#">Psychology</a></li>
+                    <li><a href="#">Different...</a></li>
+                </ul>
+                <h3>Top Product</h3>
+                <ul>
+                    <li><a href="#">Dat Rung Phuong Nam</a></li>
+                    <li><a href="#">Dac Nhan Tam</a></li>
+                    <li><a href="#">Doraemon</a></li>
+                    <li><a href="#">Vu Tru Toan Anh</a></li>
+                </ul>
+            </aside>
+            <div class="col-md-8 col-sm-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--breadcrumb-->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#">Home</a></li>
+                              <li class="breadcrumb-item"><a href="#">Novels</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Top Product</li>
+                            </ol>
+                          </nav>
+                        <!--end breadcrumb-->
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="box-topic">
+                            <div class="box-top">
+                                <img id="img-topic" class="img-fluid" src="images/image03.jpg" alt="Product">
+                            </div>
+                            <div class="box-small">
+                                <div>
+                                    <a href="#" onclick="changeImage(2)"><img src="images/image02.jpg" alt="Product"></a>
+                                </div>
+                                <div>
+                                    <a href="#" onclick="changeImage(4)"><img src="images/image04.jpg" alt="Product"></a>
+                                </div>
+                                <div>
+                                    <a href="#" onclick="changeImage(5)"><img src="images/image05.jpg" alt="Product"></a>
+                                </div>
+                                <div>
+                                    <a href="#" onclick="changeImage(6)"><img src="images/image06.jpg" alt="Product"></a>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div class="col-md-6 content_between">
+                        <h3>RỪNG NAUY</h3>
+                        <h4>Summary:</h4>
+                        <p>
+                            Rừng Na-Uy là tiểu thuyết của nhà văn Nhật Bản Murakami Haruki, được xuất bản lần đầu năm 1987. Với thủ pháp dòng ý thức, cốt truyện diễn tiến trong dòng hồi tưởng của nhân vật chính là chàng sinh viên bình thường Watanabe Tōru. Cậu ta đã trải qua nhiều cuộc tình chớp nhoáng với nhiều cô gái trẻ ưa tự do. Nhưng cậu ta cũng có những mối tình sâu nặng, điển hình là với Naoko, người yêu của người bạn thân nhất của cậu, một cô gái không ổn định về cảm xúc, và với Midori, một cô gái thẳng thắn và hoạt bát. Các nhân vật trong truyện hầu hết là những con người cô đơn móc nối với nhau. Có những nhân vật đã phải tìm đến cái chết để mãi mãi giải thoát khỏi nỗi đau đớn ấy.
+                        </p>
+                        <button class="btn btn-primary" type="button">Buy now</button>
+                    </div>
+                    <div class="col-12 describe" style="margin-top: 20px; text-align: left; ">
+                        <h4>Mô tả</h4>
+                        <ul>
+                            <li>Tên nhà cung cấp: Nhã Nam </li>
+                            <li>Tác giả: Murakami Haruki. </li>
+                            <li>Người dịch: Trịnh Lữ. </li>
+                            <li>NXB: NXB Hội Nhà Văn. </li>
+                        </ul>
+                    </div> 
+                </div> 
+        </div>
+         
+        <div class="col-md-2 col-sm-4">                
+            Advertising...
+        </div>
+    </div>
+    <footer class="bg-info">
+		<p>Footer infomation...</p>
+		<p><a href="#">Link 1</a> | <a href="#">Link 2</a> | <a href="#">Link 3</a></p>
+	</footer>
+</body>
+</html>

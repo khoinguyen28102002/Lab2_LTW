@@ -1,0 +1,55 @@
+
+nav {
+    margin-bottom: 50px;
+}
+form {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+aside h2, aside h3{
+	font-size: 1.2em;
+	background-color:navajowhite;
+	text-align: center;
+	padding: 4px 7px;
+	border: 1px solid rgba(0, 0, 0, 0.844);
+	border-radius: 10px;
+}
+aside ul {
+	list-style: none;
+	padding-left: 0;
+}
+aside ul a:hover {
+	text-decoration: none;
+}
+footer {
+	margin-top: 50px;
+	padding: 15px;
+	color:darkorange;
+	text-align: center;
+}
+
+.navbar li a:hover {
+    color: purple !important;
+}
+.box-small {
+	margin-top: 10px;
+	display: flex;
+	text-align: center;
+}
+.box-small img {
+	width: 70%;
+}
+h4 {
+	font-weight: bold;
+	text-align: left;
+}
+ li a:hover {
+    color: purple ;
+}
+
+.describe ul {
+	text-align: left;
+	list-style: none;
+	margin-left: 0;
+}
